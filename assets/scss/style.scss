@@ -1,0 +1,345 @@
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+@font-face {
+  font-family: avenirnext;
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: avenirnextbold;
+  src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: big_caslon;
+  src: url(../fonts/Big_Caslon_Medium.ttf);
+}
+//   colors
+$base_color_head: #e8e4df;
+$white: #fff;
+$black: #000;
+$gray: #9c9b9b;
+$gray_dark: #333;
+$gray_light: #555;
+$gray_light_medium: #6d6d6d;
+$scroll_bar: rgba(156, 156, 156, 0.589);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "avenir";
+}
+@mixin font_one {
+  font-size: 15px;
+  line-height: 19.12px;
+}
+
+@mixin div_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar-expand-lg .navbar-nav .nav_link {
+  @include font_one;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-bottom: 2px solid transparent;
+}
+.navbar-expand-lg .navbar-nav .nav_link:hover {
+  border-bottom: 2px solid $black;
+}
+.account {
+  @include font_one;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.banner_head {
+  @include font_one;
+  background-color: $base_color_head;
+  padding: 10px 0;
+}
+.logo {
+  font-family: "inter";
+  font-size: 30px;
+  line-height: 36.31px;
+}
+.padding_nav {
+  padding: 24px 0;
+}
+.img_w {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner_text {
+  @include div_center();
+}
+.swimear {
+  @include font_one;
+  letter-spacing: 0.1em;
+  font-family: "avenirnext";
+  padding: 30px 0;
+}
+.banner_title {
+  font-family: "big_caslon";
+  font-size: 60px;
+  line-height: 72.54px;
+  letter-spacing: 0.06em;
+}
+.banner_text_one {
+  font-family: "avenirnext";
+  font-size: 20px;
+  line-height: 30.05px;
+  padding: 30px 0;
+}
+
+.banner_btn {
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 20.49px;
+  background-color: $white;
+  padding: 18px 30px;
+  border-radius: 4px;
+  &:hover {
+    background-color: $black;
+    color: $white !important;
+  }
+}
+.newClass {
+  border: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $black;
+  padding: 15px 0;
+}
+.newClass .nav_link:hover {
+  border-bottom: 2px solid $white !important;
+}
+.banner_head_fix {
+  margin-top: -94px;
+}
+.view_all {
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 20.49px;
+  border-bottom: 2px solid transparent;
+}
+.view_all:hover {
+  border-bottom: 2px solid $black;
+  color: $black !important;
+}
+.our_collections {
+  font-family: "big_caslon";
+  font-size: 27px;
+  line-height: 32.64px;
+  letter-spacing: 0.04em;
+}
+.second_section {
+  padding: 90px 0 34px;
+}
+.our_collections_banner {
+  @include div_center;
+  font-family: "big_caslon";
+  font-size: 27px;
+  line-height: 32.64px;
+  letter-spacing: 0.04em;
+}
+.collection_banner_main {
+  overflow-x: auto;
+  margin-bottom: 120px;
+}
+.collection_banner_sub {
+  padding-bottom: 64px;
+}
+
+.collection_banner_main::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.collection_banner_main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px $scroll_bar;
+  border-radius: 10px;
+}
+.collection_banner_main::-webkit-scrollbar-thumb {
+  background-color: $gray_light_medium;
+  outline: 0px;
+  border-radius: 10px;
+}
+.collection_banner_sub_last {
+  padding: 80px;
+  background-color: $base_color_head;
+}
+.our_collections_banner_sub_last_text {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  font-family: "big_caslon";
+  font-size: 27px;
+  line-height: 32.64px;
+  letter-spacing: 0.04em;
+}
+.sale {
+  @include font_one;
+  font-family: "avenirnext";
+  padding-bottom: 5px;
+  letter-spacing: 0.1em;
+}
+.card_one {
+  @include font_one;
+  font-family: "avenirnext";
+}
+.text_gray {
+  color: $gray;
+}
+.our_vision {
+  @include div_center;
+  row-gap: 30px;
+}
+.our_vision_title {
+  @include font_one;
+  font-family: "avenirnext";
+  letter-spacing: 0.1em;
+}
+.our_vision_content {
+  font-family: "big_caslon";
+  font-size: 45px;
+  line-height: 62.54px;
+  letter-spacing: 0.06em;
+}
+.our_vision_text {
+  font-family: "avenirnext";
+  font-size: 22px;
+  line-height: 30.05px;
+}
+.car_title_one {
+  font-family: "big_caslon";
+  font-size: 21px;
+  line-height: 25.39px;
+  letter-spacing: 0.04em;
+  padding-top: 30px;
+}
+.card_text {
+  @include font_one;
+  font-family: "avenirnext";
+  padding-bottom: 30px;
+}
+.shop {
+  font-family: "avenirnext";
+  @include font_one;
+  border-bottom: 2px solid $black;
+}
+.last_section {
+  @include div_center;
+  top: 40%;
+}
+.last_text_one {
+  font-family: "big_caslon";
+  font-size: 13px;
+  line-height: 15.72px;
+  letter-spacing: 0.04em;
+}
+.our_summer {
+  font-family: "big_caslon";
+  font-size: 60px;
+  line-height: 72.54px;
+  letter-spacing: 0.06em;
+  margin-top: 10px;
+  margin-bottom: 40px !important;
+}
+.date_text {
+  @include font_one;
+  font-family: "avenirnext";
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 0.1em;
+}
+.last_title {
+  padding-top: 134px;
+}
+
+#button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: $black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border-radius: 50%;
+}
+#button::after {
+  content: "⮝";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 45px;
+  color: $white;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: $gray_dark;
+}
+#button:active {
+  background-color: $gray_light;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+.footer_title {
+  @include font_one;
+  font-family: "avenirnextbold";
+  line-height: 20.49px;
+}
+.footer_text {
+  font-family: "avenirnext";
+  @include font_one;
+  line-height: 20.49px;
+}
+.footer_text:hover {
+  color: $gray_light !important;
+}
+.email_enter {
+  background: transparent;
+  border-bottom: 1px solid $black;
+  border-radius: 0;
+}
+.btn_drop .btn,
+.btn_drop p {
+  color: $gray_light;
+}
+.btn_drop .dropdown-toggle::after {
+  background-image: url(../img/CaretDown.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.email_enter:focus {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-bottom: 1px solid $black !important;
+  box-shadow: none !important;
+}
+.footer_set {
+  padding: 100px 0;
+}

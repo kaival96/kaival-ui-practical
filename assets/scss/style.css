@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+@font-face {
+  font-family: avenirnext;
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: avenirnextbold;
+  src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: big_caslon;
+  src: url(../fonts/Big_Caslon_Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "avenir";
+}
+
+.navbar-expand-lg .navbar-nav .nav_link {
+  font-size: 15px;
+  line-height: 19.12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav_link:hover {
+  border-bottom: 2px solid #000;
+}
+
+.account {
+  font-size: 15px;
+  line-height: 19.12px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.banner_head {
+  font-size: 15px;
+  line-height: 19.12px;
+  background-color: #e8e4df;
+  padding: 10px 0;
+}
+
+.logo {
+  font-family: "inter";
+  font-size: 30px;
+  line-height: 36.31px;
+}
+
+.padding_nav {
+  padding: 24px 0;
+}
+
+.img_w {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swimear {
+  font-size: 15px;
+  line-height: 19.12px;
+  letter-spacing: 0.1em;
+  font-family: "avenirnext";
+  padding: 30px 0;
+}
+
+.banner_title {
+  font-family: "big_caslon";
+  font-size: 60px;
+  line-height: 72.54px;
+  letter-spacing: 0.06em;
+}
+
+.banner_text_one {
+  font-family: "avenirnext";
+  font-size: 20px;
+  line-height: 30.05px;
+  padding: 30px 0;
+}
+
+.banner_btn {
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 20.49px;
+  background-color: #fff;
+  padding: 18px 30px;
+  border-radius: 4px;
+}
+.banner_btn:hover {
+  background-color: #000;
+  color: #fff !important;
+}
+
+.newClass {
+  border: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 15px 0;
+}
+
+.newClass .nav_link:hover {
+  border-bottom: 2px solid #fff !important;
+}
+
+.banner_head_fix {
+  margin-top: -94px;
+}
+
+.view_all {
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 20.49px;
+  border-bottom: 2px solid transparent;
+}
+
+.view_all:hover {
+  border-bottom: 2px solid #000;
+  color: #000 !important;
+}
+
+.our_collections {
+  font-family: "big_caslon";
+  font-size: 27px;
+  line-height: 32.64px;
+  letter-spacing: 0.04em;
+}
+
+.second_section {
+  padding: 90px 0 34px;
+}
+
+.our_collections_banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "big_caslon";
+  font-size: 27px;
+  line-height: 32.64px;
+  letter-spacing: 0.04em;
+}
+
+.collection_banner_main {
+  overflow-x: auto;
+  margin-bottom: 120px;
+}
+
+.collection_banner_sub {
+  padding-bottom: 64px;
+}
+
+.collection_banner_main::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.collection_banner_main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.589);
+  border-radius: 10px;
+}
+
+.collection_banner_main::-webkit-scrollbar-thumb {
+  background-color: #6d6d6d;
+  outline: 0px;
+  border-radius: 10px;
+}
+
+.collection_banner_sub_last {
+  padding: 80px;
+  background-color: #e8e4df;
+}
+
+.our_collections_banner_sub_last_text {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  font-family: "big_caslon";
+  font-size: 27px;
+  line-height: 32.64px;
+  letter-spacing: 0.04em;
+}
+
+.sale {
+  font-size: 15px;
+  line-height: 19.12px;
+  font-family: "avenirnext";
+  padding-bottom: 5px;
+  letter-spacing: 0.1em;
+}
+
+.card_one {
+  font-size: 15px;
+  line-height: 19.12px;
+  font-family: "avenirnext";
+}
+
+.text_gray {
+  color: #9c9b9b;
+}
+
+.our_vision {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  row-gap: 30px;
+}
+
+.our_vision_title {
+  font-size: 15px;
+  line-height: 19.12px;
+  font-family: "avenirnext";
+  letter-spacing: 0.1em;
+}
+
+.our_vision_content {
+  font-family: "big_caslon";
+  font-size: 45px;
+  line-height: 62.54px;
+  letter-spacing: 0.06em;
+}
+
+.our_vision_text {
+  font-family: "avenirnext";
+  font-size: 22px;
+  line-height: 30.05px;
+}
+
+.car_title_one {
+  font-family: "big_caslon";
+  font-size: 21px;
+  line-height: 25.39px;
+  letter-spacing: 0.04em;
+  padding-top: 30px;
+}
+
+.card_text {
+  font-size: 15px;
+  line-height: 19.12px;
+  font-family: "avenirnext";
+  padding-bottom: 30px;
+}
+
+.shop {
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 19.12px;
+  border-bottom: 2px solid #000;
+}
+
+.last_section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 40%;
+}
+
+.last_text_one {
+  font-family: "big_caslon";
+  font-size: 13px;
+  line-height: 15.72px;
+  letter-spacing: 0.04em;
+}
+
+.our_summer {
+  font-family: "big_caslon";
+  font-size: 60px;
+  line-height: 72.54px;
+  letter-spacing: 0.06em;
+  margin-top: 10px;
+  margin-bottom: 40px !important;
+}
+
+.date_text {
+  font-size: 15px;
+  line-height: 19.12px;
+  font-family: "avenirnext";
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 0.1em;
+}
+
+.last_title {
+  padding-top: 134px;
+}
+
+#button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+#button::after {
+  content: "⮝";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 45px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer_title {
+  font-size: 15px;
+  line-height: 19.12px;
+  font-family: "avenirnextbold";
+  line-height: 20.49px;
+}
+
+.footer_text {
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 19.12px;
+  line-height: 20.49px;
+}
+
+.footer_text:hover {
+  color: #555 !important;
+}
+
+.email_enter {
+  background: transparent;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.btn_drop .btn,
+.btn_drop p {
+  color: #555;
+}
+
+.btn_drop .dropdown-toggle::after {
+  background-image: url(../img/CaretDown.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email_enter:focus {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-bottom: 1px solid #000 !important;
+  box-shadow: none !important;
+}
+
+.footer_set {
+  padding: 100px 0;
+}/*# sourceMappingURL=style.css.map */
