@@ -56,9 +56,9 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   padding-left: 18px;
   padding-right: 18px;
   border-bottom: 2px solid transparent;
-}
-.navbar-expand-lg .navbar-nav .nav_link:hover {
-  border-bottom: 2px solid $black;
+  &:hover {
+    border-bottom: 2px solid $black;
+  }
 }
 .account {
   @include font_one;
@@ -133,10 +133,10 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
 .view_all {
   @include font_two;
   border-bottom: 2px solid transparent;
-}
-.view_all:hover {
-  border-bottom: 2px solid $black;
-  color: $black !important;
+  &:hover {
+    border-bottom: 2px solid $black;
+    color: $black !important;
+  }
 }
 .our_collections {
   font-family: "big_caslon";
@@ -283,21 +283,21 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   visibility: hidden;
   z-index: 1000;
   border-radius: 50%;
-}
-#button::after {
-  content: "⮝";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5em;
-  line-height: 45px;
-  color: $white;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: $gray_dark;
-}
-#button:active {
-  background-color: $gray_light;
+  &::after {
+    content: "⮝";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 45px;
+    color: $white;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $gray_dark;
+  }
+  &:active {
+    background-color: $gray_light;
+  }
 }
 #button.show {
   opacity: 1;
@@ -320,6 +320,30 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   background: transparent;
   border-bottom: 1px solid $black;
   border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.email_arrow{
+  position: relative;
+    &::after{
+    content: '';
+    position: absolute;
+    background-image: url(../img/ArrowRight.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+  }
+}
+.email_enter:focus {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-bottom: 1px solid $black !important;
+  box-shadow: none !important;
 }
 .btn_drop .btn,
 .btn_drop p {
@@ -335,12 +359,6 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-.email_enter:focus {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  border-bottom: 1px solid $black !important;
-  box-shadow: none !important;
 }
 .footer_set {
   padding: 100px 0;
