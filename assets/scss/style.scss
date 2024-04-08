@@ -45,6 +45,12 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@mixin font_two{
+  font-family: "avenirnext";
+  font-size: 15px;
+  line-height: 20.49px;
+}
+
 .navbar-expand-lg .navbar-nav .nav_link {
   @include font_one;
   padding-left: 18px;
@@ -101,9 +107,7 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
 }
 
 .banner_btn {
-  font-family: "avenirnext";
-  font-size: 15px;
-  line-height: 20.49px;
+  @include font_two;
   background-color: $white;
   padding: 18px 30px;
   border-radius: 4px;
@@ -127,9 +131,7 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   margin-top: -94px;
 }
 .view_all {
-  font-family: "avenirnext";
-  font-size: 15px;
-  line-height: 20.49px;
+  @include font_two;
   border-bottom: 2px solid transparent;
 }
 .view_all:hover {
@@ -232,8 +234,8 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   padding-bottom: 30px;
 }
 .shop {
-  font-family: "avenirnext";
   @include font_one;
+  font-family: "avenirnext";
   border-bottom: 2px solid $black;
 }
 .last_section {
@@ -307,8 +309,8 @@ $scroll_bar: rgba(156, 156, 156, 0.589);
   line-height: 20.49px;
 }
 .footer_text {
-  font-family: "avenirnext";
   @include font_one;
+  font-family: "avenirnext";
   line-height: 20.49px;
 }
 .footer_text:hover {
